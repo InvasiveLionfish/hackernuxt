@@ -1,6 +1,6 @@
 <template>
   <div class="f1 code">
-    Hello World!
+    {{ids}}
     <ul>
       <li v-for="user in users" :key="user.id">
         {{ user.login }}
@@ -10,11 +10,12 @@
 </template>
 
 <script>
-import {mapState} from 'vuex';
+import { mapState } from 'vuex'
 
 export default {
   computed: mapState([
-    "users"
+    "users",
+    "ids"
   ])
 }
 </script>
