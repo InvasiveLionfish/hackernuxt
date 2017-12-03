@@ -1,9 +1,8 @@
 <template>
-  <div class="f1 code">
-    {{ids}}
-    <ul>
-      <li v-for="user in users" :key="user.id">
-        {{ user.login }}
+  <div class="code">
+    <ul class="list pa2">
+      <li v-for="item in items" :key="item.id">
+        {{ item.title }}
       </li>
     </ul>
   </div>
@@ -14,8 +13,8 @@ import { mapState } from 'vuex'
 
 export default {
   computed: mapState([
-    "users",
-    "ids"
+    "ids",
+    "items"
   ])
 }
 </script>
