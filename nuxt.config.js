@@ -41,5 +41,9 @@ module.exports = {
     'tachyons/css/tachyons.min.css',
     'tachyons-debug/css/tachyons-debug.min.css',
     '~/assets/main.css'
+  ],
+
+  plugins: [
+    '~/plugins/filters'
   ]
 }
